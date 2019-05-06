@@ -111,7 +111,8 @@ function startServer() {
   app.get('/', function(req, res){
     res.send(`
       <h1>Testando o backend do realtime editor</h1>
-      <p>A aplicação está rodando na porta ${PORT}</p>
+      <p>Listening on http://localhost:${PORT} -> socket.io</p>
+      <p>Listening on http://localhost:${PORT + 1} -> webSocket</p>
     `);
   });
 
